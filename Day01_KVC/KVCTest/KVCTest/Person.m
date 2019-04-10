@@ -21,4 +21,34 @@
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {
     
 }
+
+- (BOOL)validateValue:(inout id  _Nullable __autoreleasing *)ioValue
+               forKey:(NSString *)inKey
+                error:(out NSError * _Nullable __autoreleasing *)outError {
+    if ([inKey isEqualToString:@"name"]) {
+        if ([*ioValue isKindOfClass:[NSString class]]) {
+            NSLog(@"yes == %d,ioValueClass == %@", YES, NSStringFromClass([*ioValue class]));
+            return YES;
+        }else{
+            NSLog(@"no == %d,ioValueClass == %@", NO, NSStringFromClass([*ioValue class]));
+            return NO;
+        }
+    }
+    return YES;
+}
+
+- (BOOL)validateName:(id *)ioValue
+               error:(NSError * __autoreleasing *)outError {
+    if ((*ioValue == nil) || ([(NSString *)*ioValue length] < 2)) {
+        if (outError != NULL) {
+            *outError = [NSError errorWithDomain:NSCocoaErrorDomain
+                                            code:1
+                                        userInfo:@{ NSLocalizedDescriptionKey
+                                                    : @"Name too short" }];
+        }
+        return NO;
+    }
+    return YES;
+}
+
 @end

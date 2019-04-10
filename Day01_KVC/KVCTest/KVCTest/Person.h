@@ -11,4 +11,7 @@
 @interface Person : NSObject
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) NSUInteger age;
+
+- (BOOL)validateName:(id *)ioValue
+               error:(NSError * __autoreleasing *)outError;
 @end

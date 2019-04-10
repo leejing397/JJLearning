@@ -12,6 +12,7 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableArray *arrayM;
+@property (nonatomic, strong) NSMutableArray *arrayM1;
 @end
 
 @implementation ViewController
@@ -192,7 +193,62 @@
     //set- @distinctUnionOfSets返回操作对象（且操作对象内对象必须是数组/集合）中数组/集合的所有对象，返回值为集合.因为集合不能包含重复的值,所以它只有distinct操作
     
     //2.3特殊用法——属性验证
+    NSError *error;
+    NSString *nameStr = @"小";
+    BOOL nameValid = [person validateName:&nameStr error:&error];
+    NSString *name = [person valueForKey:@"name"];
+    if(nameValid){
+        NSLog(@"可以赋值,name=%@",name);
+    }else {
+        NSLog(@"不可以赋值,name=%@",name);
+    }
+    /*
+     上述用例演示了一个name字符串属性的验证方法，该方法确保值对象的最小长度和不为nil。
+     如果验证失败，此方法不会替换其他值。
+     */
+    
+    //- (BOOL)validateValue:(inout id _Nullable * _Nonnull)ioValue forKey:(NSString *)inKey error:(out NSError **)outError
+    /*
+     这一方法主要是在使用KVC赋值前验证key与Value是否匹配的方法。
+     同时这个方法系统不会自动去检测，需要自己调用去检测。
+     默认返回YES。
+     */
+    
+    BOOL canValidate = [person validateValue:&nameStr forKey:@"name" error:&error];
+    name = [person valueForKey:@"name"];
+    if(canValidate){
+        NSLog(@"可以赋值，name=%@",name);
+    }else {
+       NSLog(@"不可以赋值,name=%@",name);
+    }
+    /* 上面打印：
+     yes == 1,ioValueClass == __NSCFConstantString
+    可以赋值，name=sepCode
+     */
+
+    self.arrayM1 = @[@1,@2,@3,@4].mutableCopy;
+    [self.arrayM1 addObject:@12];
+    [self.arrayM1 removeLastObject];
+    [self.arrayM1 replaceObjectAtIndex:0 withObject:@(4)];
+    
+    NSMutableArray *kvcArray = [self mutableArrayValueForKey:@"arrayM1"];
+    // 发送NSMutableArray消息 与上面三个方法依次对应
+    [kvcArray addObject:@(14)];
+    [kvcArray removeLastObject];
+    [kvcArray replaceObjectAtIndex:2 withObject:@(11)];
+    
 }
+- (void)insertObject:(NSNumber *)object inArrayM1AtIndex:(NSUInteger)index {
+    [self.arrayM1 insertObject:object atIndex:index];
+}
+
+- (void)removeObjectFromArrayM1AtIndex:(NSUInteger)index {
+    [self.arrayM1 removeObjectAtIndex:index];
+}
+- (void)replaceObjectInArrayM1AtIndex:(NSUInteger)index withObject:(id)object {
+    [self.arrayM1 replaceObjectAtIndex:index withObject:object];
+}
+
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [[self mutableArrayValueForKey:@"arrayM"] addObject:@"4"];
