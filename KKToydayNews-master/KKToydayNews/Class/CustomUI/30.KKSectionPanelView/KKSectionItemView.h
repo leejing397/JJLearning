@@ -10,6 +10,7 @@
 #import "KKSectionItem.h"
 
 @protocol KKSectionItemViewDelegate;
+
 @interface KKSectionItemView : UIView
 @property(nonatomic,assign)BOOL favorite;
 @property(nonatomic,assign)BOOL hideCloseButton;

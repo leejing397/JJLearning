@@ -139,6 +139,7 @@ static NSString *cellReuseIdentifier = @"cellReuseIdentifier";
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat offsetY = scrollView.contentOffset.y;
+    NSLog(@"offsetY === %f",offsetY);
     if (offsetY < - self.headerViewHeight) {
         CGRect frame = self.headView.frame;
         frame.origin.y = offsetY;
@@ -179,7 +180,7 @@ static NSString *cellReuseIdentifier = @"cellReuseIdentifier";
         _tabelView = ({
             UITableView *view = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
             view.delegate = self ;
-            view.dataSource =self;
+            view.dataSource = self;
             view.separatorStyle = UITableViewCellSeparatorStyleSingleLine ;
             view.tableFooterView = [UIView new];
             view.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];

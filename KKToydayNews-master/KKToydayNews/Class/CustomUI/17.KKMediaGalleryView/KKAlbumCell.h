@@ -15,5 +15,7 @@ typedef NS_ENUM(NSInteger, KKAlbumCellType){
 } ;
 
 @interface KKAlbumCell : UITableViewCell
-- (void)refreshWith:(KKMediaAlbumInfo *)albumIfo curtSelAlbumId:(NSString *)albumId cellType:(KKAlbumCellType)type;
+- (void)refreshWith:(KKMediaAlbumInfo *)albumIfo
+     curtSelAlbumId:(NSString *)albumId
+           cellType:(KKAlbumCellType)type;
 @end

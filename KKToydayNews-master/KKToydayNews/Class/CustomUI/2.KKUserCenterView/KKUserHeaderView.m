@@ -12,16 +12,16 @@
 static CGFloat headViewWH = 55 ;
 
 @interface KKUserHeaderView()
-@property(nonatomic)UIImageView *bgImageView;
-@property(nonatomic)UIImageView *backView;
-@property(nonatomic)UIImageView *headView;
-@property(nonatomic)UILabel *nameLabel;
-@property(nonatomic)KKUserHeadItemView *dtItemView;
-@property(nonatomic)KKUserHeadItemView *concernItemView;
-@property(nonatomic)KKUserHeadItemView *fansItemView;
-@property(nonatomic)KKUserHeadItemView *favItemView;
-@property(nonatomic)KKUserHeadItemView *historyItemView;
-@property(nonatomic)KKUserHeadItemView *nightItemView;
+@property(nonatomic)UIImageView *bgImageView; //背景图
+@property(nonatomic)UIImageView *backView; //返回img
+@property(nonatomic)UIImageView *headView; //头像
+@property(nonatomic)UILabel *nameLabel;    //姓名
+@property(nonatomic)KKUserHeadItemView *dtItemView; //动态
+@property(nonatomic)KKUserHeadItemView *concernItemView; //关注
+@property(nonatomic)KKUserHeadItemView *fansItemView; //粉丝
+@property(nonatomic)KKUserHeadItemView *favItemView; //收藏
+@property(nonatomic)KKUserHeadItemView *historyItemView; //历史
+@property(nonatomic)KKUserHeadItemView *nightItemView;  //夜间
 @end
 
 @implementation KKUserHeaderView
@@ -52,13 +52,13 @@ static CGFloat headViewWH = 55 ;
         make.left.right.top.mas_equalTo(self);
         make.bottom.mas_equalTo(self.favItemView.mas_top);
     }];
-    
+    //返回
     [self.backView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self).mas_offset(kkPaddingNormal);
         make.centerY.mas_equalTo(self.headView);
         make.size.mas_equalTo(CGSizeMake(20, 20));
     }];
-    
+    //头像
     [self.headView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.backView.mas_right).mas_offset(kkPaddingNormal);
         make.bottom.mas_equalTo(self.dtItemView.mas_top).mas_offset(-kkPaddingNormal);
@@ -69,37 +69,37 @@ static CGFloat headViewWH = 55 ;
         make.left.mas_equalTo(self.headView.mas_right).mas_offset(kkPaddingNormal);
         make.centerY.mas_equalTo(self.headView);
     }];
-    
+    //动态
     [self.dtItemView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.bottom.mas_equalTo(self.favItemView.mas_top);
         make.left.mas_equalTo(self);
         make.size.mas_equalTo(CGSizeMake(UIDeviceScreenWidth/3.0, 60));
     }];
-    
+    //关注
     [self.concernItemView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.dtItemView);
         make.left.mas_equalTo(self.dtItemView.mas_right);
         make.size.mas_equalTo(self.dtItemView);
     }];
-    
+    //粉丝
     [self.fansItemView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.dtItemView);
         make.left.mas_equalTo(self.concernItemView.mas_right);
         make.size.mas_equalTo(self.dtItemView);
     }];
-    
+    //收藏
     [self.favItemView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.bottom.mas_equalTo(self);
         make.left.mas_equalTo(self);
         make.size.mas_equalTo(CGSizeMake(UIDeviceScreenWidth/3.0, 60));
     }];
-    
+    //历史
     [self.historyItemView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.favItemView);
         make.left.mas_equalTo(self.favItemView.mas_right);
         make.size.mas_equalTo(self.favItemView);
     }];
-    
+    //夜间
     [self.nightItemView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.favItemView);
         make.left.mas_equalTo(self.historyItemView.mas_right);
@@ -116,7 +116,7 @@ static CGFloat headViewWH = 55 ;
 }
 
 #pragma mark -- @property getter
-
+#pragma mark 背景图
 - (UIImageView *)bgImageView{
     if(!_bgImageView){
         _bgImageView = ({
@@ -129,7 +129,7 @@ static CGFloat headViewWH = 55 ;
     }
     return _bgImageView;
 }
-
+#pragma mark 返回按钮
 - (UIImageView *)backView{
     if(!_backView){
         _backView = ({
@@ -149,7 +149,7 @@ static CGFloat headViewWH = 55 ;
     }
     return _backView;
 }
-
+#pragma mark 头像
 - (UIImageView *)headView{
     if(!_headView){
         _headView = ({
@@ -166,6 +166,7 @@ static CGFloat headViewWH = 55 ;
     return _headView;
 }
 
+#pragma mark 姓名
 - (UILabel *)nameLabel{
     if(!_nameLabel){
         _nameLabel = ({
@@ -181,6 +182,7 @@ static CGFloat headViewWH = 55 ;
     return _nameLabel;
 }
 
+#pragma mark 动态
 - (KKUserHeadItemView *)dtItemView{
     if(!_dtItemView){
         _dtItemView = ({
@@ -193,6 +195,7 @@ static CGFloat headViewWH = 55 ;
     return _dtItemView;
 }
 
+#pragma mark 关注
 - (KKUserHeadItemView *)concernItemView{
     if(!_concernItemView){
         _concernItemView = ({
@@ -205,6 +208,7 @@ static CGFloat headViewWH = 55 ;
     return _concernItemView;
 }
 
+#pragma mark 粉丝
 - (KKUserHeadItemView *)fansItemView{
     if(!_fansItemView){
         _fansItemView = ({
@@ -217,6 +221,7 @@ static CGFloat headViewWH = 55 ;
     return _fansItemView;
 }
 
+#pragma mark 收藏
 - (KKUserHeadItemView *)favItemView{
     if(!_favItemView){
         _favItemView = ({
@@ -229,6 +234,7 @@ static CGFloat headViewWH = 55 ;
     return _favItemView;
 }
 
+#pragma mark 历史
 - (KKUserHeadItemView *)historyItemView{
     if(!_historyItemView){
         _historyItemView = ({
@@ -241,6 +247,7 @@ static CGFloat headViewWH = 55 ;
     return _historyItemView;
 }
 
+#pragma mark 夜间
 - (KKUserHeadItemView *)nightItemView{
     if(!_nightItemView){
         _nightItemView = ({

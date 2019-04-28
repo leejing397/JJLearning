@@ -34,6 +34,7 @@
 
 @implementation KKHomeViewCtrl
 
+#pragma mark 生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
@@ -58,7 +59,6 @@
 }
 
 #pragma mark -- 视频播放器，屏幕旋转相关
-
 - (BOOL)shouldAutorotate{
     return NO ;
 }
@@ -184,6 +184,7 @@
     self.preSelCatagory = item.category;
 }
 
+#pragma mark 频道加号
 - (void)addMoreSectionClicked{
     KKSectionPanelView *pannelView = [[KKSectionPanelView alloc]init];
     pannelView.topSpace = KKStatusBarHeight;
@@ -420,6 +421,7 @@
     return _navTitleView;
 }
 
+#pragma mark 头像
 - (UIImageView *)headView{
     if(!_headView){
         _headView = ({
@@ -449,12 +451,13 @@
     }
     return _headView;
 }
-
+#pragma mark 横向选择
 - (KKSectionTopBarView *)sectionBarView{
     if(!_sectionBarView) {
         _sectionBarView = ({
             KKSectionTopBarView *view = [[KKSectionTopBarView alloc]init];
             view.delegate = self ;
+            view.backgroundColor = [UIColor yellowColor];
             view.borderColor = [[UIColor blackColor]colorWithAlphaComponent:0.1];
             view.borderThickness = 0.5;
             view.borderType = KKBorderTypeTop | KKBorderTypeBottom;

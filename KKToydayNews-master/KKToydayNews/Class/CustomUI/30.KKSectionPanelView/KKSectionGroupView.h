@@ -10,6 +10,7 @@
 #import "KKSectionItem.h"
 
 @protocol KKSectionGroupViewDelegate;
+
 @interface KKSectionGroupView : UIView
 
 @property(nonatomic,weak)id<KKSectionGroupViewDelegate>delegate;

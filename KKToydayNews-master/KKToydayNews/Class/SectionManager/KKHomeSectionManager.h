@@ -27,7 +27,7 @@
 
 #pragma mark -- 保存用户感兴趣的板块到本地
 
-- (void)saveFavSection ;
+- (void)saveFavSection;
 
 #pragma mark -- 获取板块的索引
 

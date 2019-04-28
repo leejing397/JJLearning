@@ -52,9 +52,13 @@
     self.backgroundColor = [UIColor clearColor];
     self.topSpace = KKStatusBarHeight;
     
+    //关闭按钮
     [self.dragContentView addSubview:self.closeBtn];
+    //分割线
     [self.dragContentView addSubview:self.splitView];
+    //scrollview
     [self.dragContentView insertSubview:self.sectionContentView belowSubview:self.splitView];
+    
     [self.sectionContentView addSubview:self.headerView1];
     [self.sectionContentView addSubview:self.favSectionView];
     [self.sectionContentView addSubview:self.headerView2];
@@ -74,7 +78,7 @@
     
     [self.sectionContentView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.splitView.mas_bottom);
-        make.left.right.mas_equalTo(self.dragContentView).priority(998);
+        make.left.right.mas_equalTo(self.dragContentView).priority(998); //priority:手动设置一个优先级参数
         make.width.mas_equalTo(self.dragContentView);
         make.height.mas_equalTo(self.dragContentView);
     }];
@@ -247,8 +251,8 @@
     if(!_splitView){
         _splitView = ({
             UIView *view = [[UIView alloc]init];
-            view.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.1];
-            view.alpha = 0.0 ;
+            view.backgroundColor =  [UIColor blueColor];//[colorWithAlphaComponent:0.1];
+//            view.alpha = 0.0 ;
             view ;
         });
     }

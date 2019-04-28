@@ -60,9 +60,9 @@
 - (void)editBtnClick{
     self.isEdit = !self.isEdit ;
     if(self.isEdit){
-        [self.editBtn setTitle:@"完成" forState:UIControlStateNormal];
+        [self.editBtn setTitle:@"完成22" forState:UIControlStateNormal];
     }else{
-        [self.editBtn setTitle:@"编辑" forState:UIControlStateNormal];
+        [self.editBtn setTitle:@"编辑33" forState:UIControlStateNormal];
     }
     if(self.enditBtnClickHandler){
         self.enditBtnClickHandler(self.isEdit);
@@ -127,10 +127,10 @@
 - (void)setIsEdit:(BOOL)isEdit{
     _isEdit = isEdit ;
     if(_isEdit){
-        [self.editBtn setTitle:@"完成" forState:UIControlStateNormal];
+        [self.editBtn setTitle:@"完成1" forState:UIControlStateNormal];
         [self.detailLabel setText:@"拖拽可以排序"];
     }else{
-        [_editBtn setTitle:@"编辑" forState:UIControlStateNormal];
+        [_editBtn setTitle:@"编辑2" forState:UIControlStateNormal];
         [self.detailLabel setText:@"点击进入频道"];
     }
 }
