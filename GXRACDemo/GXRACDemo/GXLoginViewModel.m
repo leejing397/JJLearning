@@ -12,6 +12,7 @@
 #import "GXLoginModel.h"
 
 @implementation GXLoginViewModel
+
 - (instancetype)init {
     if (self = [super init]) {
         [self initCommand];
@@ -47,7 +48,7 @@
 
 - (RACSignal *)racForSubmitEnable {
     return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        BOOL status = self.account.length == 3 && self.pwd.length == 3;
+        BOOL status = self.account.length == 3 && self.pwd.length == 4;
         [subscriber sendNext:@(status)];
         [subscriber sendCompleted];
         return nil;

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		615AEB51E118F5477CCDC289 /* Pods_GXRACDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B34D55F180721755029DFC1 /* Pods_GXRACDemo.framework */; };
+		FFB74BF322BCABC400A3293B /* kfc.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFB74BF222BCABC300A3293B /* kfc.plist */; };
+		FFB74BF622BCAE2600A3293B /* GXKFCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB74BF522BCAE2600A3293B /* GXKFCModel.m */; };
+		FFB74BF922BCB87E00A3293B /* GXBlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB74BF822BCB87E00A3293B /* GXBlueView.m */; };
 		FFDBB95E22B0DEC7000BCC08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB95D22B0DEC7000BCC08 /* AppDelegate.m */; };
 		FFDBB96122B0DEC7000BCC08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB96022B0DEC7000BCC08 /* ViewController.m */; };
 		FFDBB96422B0DEC7000BCC08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDBB96222B0DEC7000BCC08 /* Main.storyboard */; };
@@ -22,6 +25,11 @@
 		0A6CC78CA298F398CA585087 /* Pods-GXRACDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXRACDemo.debug.xcconfig"; path = "Target Support Files/Pods-GXRACDemo/Pods-GXRACDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		0B34D55F180721755029DFC1 /* Pods_GXRACDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GXRACDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B28D833BEF3DE110F03CC7 /* Pods-GXRACDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXRACDemo.release.xcconfig"; path = "Target Support Files/Pods-GXRACDemo/Pods-GXRACDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FFB74BF222BCABC300A3293B /* kfc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = kfc.plist; sourceTree = "<group>"; };
+		FFB74BF422BCAE2600A3293B /* GXKFCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXKFCModel.h; sourceTree = "<group>"; };
+		FFB74BF522BCAE2600A3293B /* GXKFCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXKFCModel.m; sourceTree = "<group>"; };
+		FFB74BF722BCB87E00A3293B /* GXBlueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXBlueView.h; sourceTree = "<group>"; };
+		FFB74BF822BCB87E00A3293B /* GXBlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXBlueView.m; sourceTree = "<group>"; };
 		FFDBB95922B0DEC7000BCC08 /* GXRACDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXRACDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDBB95C22B0DEC7000BCC08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FFDBB95D22B0DEC7000BCC08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +96,9 @@
 		FFDBB95B22B0DEC7000BCC08 /* GXRACDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FFB74BF222BCABC300A3293B /* kfc.plist */,
+				FFB74BF422BCAE2600A3293B /* GXKFCModel.h */,
+				FFB74BF522BCAE2600A3293B /* GXKFCModel.m */,
 				FFDBB95C22B0DEC7000BCC08 /* AppDelegate.h */,
 				FFDBB95D22B0DEC7000BCC08 /* AppDelegate.m */,
 				FFDBB95F22B0DEC7000BCC08 /* ViewController.h */,
@@ -101,6 +112,8 @@
 				FFDBB97322B0E9A0000BCC08 /* GXLoginModel.m */,
 				FFDBB97522B0E9DE000BCC08 /* GXLoginViewModel.h */,
 				FFDBB97622B0E9DE000BCC08 /* GXLoginViewModel.m */,
+				FFB74BF722BCB87E00A3293B /* GXBlueView.h */,
+				FFB74BF822BCB87E00A3293B /* GXBlueView.m */,
 			);
 			path = GXRACDemo;
 			sourceTree = "<group>";
@@ -168,6 +181,7 @@
 				FFDBB96922B0DEC7000BCC08 /* LaunchScreen.storyboard in Resources */,
 				FFDBB96622B0DEC7000BCC08 /* Assets.xcassets in Resources */,
 				FFDBB96422B0DEC7000BCC08 /* Main.storyboard in Resources */,
+				FFB74BF322BCABC400A3293B /* kfc.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,10 +232,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFDBB96122B0DEC7000BCC08 /* ViewController.m in Sources */,
+				FFB74BF922BCB87E00A3293B /* GXBlueView.m in Sources */,
 				FFDBB96C22B0DEC7000BCC08 /* main.m in Sources */,
 				FFDBB97422B0E9A0000BCC08 /* GXLoginModel.m in Sources */,
 				FFDBB95E22B0DEC7000BCC08 /* AppDelegate.m in Sources */,
 				FFDBB97722B0E9DE000BCC08 /* GXLoginViewModel.m in Sources */,
+				FFB74BF622BCAE2600A3293B /* GXKFCModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
