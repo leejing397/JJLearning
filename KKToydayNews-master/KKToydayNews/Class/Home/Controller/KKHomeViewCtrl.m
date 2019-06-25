@@ -24,7 +24,7 @@
 @property(nonatomic,strong)KKSearchBar *searchBar ;
 @property(nonatomic,strong)KKNavTitleView *navTitleView;
 @property(nonatomic,strong)KKSectionTopBarView *sectionBarView;
-@property(nonatomic,copy)NSString *preSelCatagory;
+@property(nonatomic,  copy)NSString *preSelCatagory;
 
 @property(nonatomic)NSMutableArray<KKBaseSummaryView *> *viewArray;
 
@@ -70,11 +70,13 @@
 #pragma mark -- 设置UI
 
 - (void)setupUI{
+    
     [self.view addSubview:self.navTitleView];
     [self.view addSubview:self.sectionBarView];
     [self.view addSubview:self.contentView];
     
     [self setupNavBar];
+    
     [self.navTitleView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_equalTo(self.view);
         make.height.mas_equalTo(KKNavBarHeight);
@@ -451,6 +453,7 @@
     }
     return _headView;
 }
+
 #pragma mark 横向选择
 - (KKSectionTopBarView *)sectionBarView{
     if(!_sectionBarView) {

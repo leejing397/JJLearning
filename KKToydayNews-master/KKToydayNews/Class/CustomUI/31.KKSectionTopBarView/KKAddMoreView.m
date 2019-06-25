@@ -28,7 +28,9 @@
 #pragma mark -- 设置UI
 
 - (void)setupUI{
+    
     [self.layer insertSublayer:self.gradientLayer atIndex:0];
+    
     [self addSubview:self.addBtn];
     [self addSubview:self.splitView];
     
@@ -79,7 +81,7 @@
     if(!_splitView){
         _splitView = ({
             UIView *view = [[UIView alloc]init];
-            view.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.1];
+            view.backgroundColor = [UIColor greenColor];//[[UIColor blackColor]colorWithAlphaComponent:0.1];
             view ;
         });
     }

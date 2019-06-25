@@ -11,7 +11,7 @@
 @interface KKNavTitleView : UIView
 @property(nonatomic,copy)NSArray *leftBtns;
 @property(nonatomic,copy)NSArray *rightBtns;
-@property(nonatomic)UIView *titleView ;
+@property(nonatomic)    UIView *titleView ;
 @property(nonatomic,copy)NSString *title;
 @property(nonatomic,readonly)UILabel *titleLabel;
 @property(nonatomic,readonly)UIView *splitView;

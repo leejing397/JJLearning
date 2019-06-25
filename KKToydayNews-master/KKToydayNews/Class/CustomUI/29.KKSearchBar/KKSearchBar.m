@@ -29,6 +29,7 @@
 - (void)setupUI{
     [self addSubview:self.searchIcon];
     [self addSubview:self.placeholderLabel];
+    
     [self.searchIcon mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self).mas_offset(5);
         make.size.mas_equalTo(CGSizeMake(20, 20));

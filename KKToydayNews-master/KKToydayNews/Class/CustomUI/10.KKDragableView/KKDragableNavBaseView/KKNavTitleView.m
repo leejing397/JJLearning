@@ -10,7 +10,7 @@
 
 @interface KKNavTitleView ()
 @property(nonatomic,readwrite) UILabel *titleLabel;
-@property(nonatomic,readwrite)UIView *splitView;
+@property(nonatomic,readwrite) UIView *splitView;
 @end
 
 @implementation KKNavTitleView
@@ -49,6 +49,7 @@
 
 - (void)setupUI{
     [self.layer setMasksToBounds:YES];
+    
     [self addSubview:self.titleLabel];
     [self addSubview:self.splitView];
     

@@ -58,23 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KKToydayNews/Class/SectionManager/KKHomeSectionManager.m"
-            timestampString = "578130034.332372"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-fetchFavSectionWithComplete:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "KKToydayNews/Class/SectionManager/KKHomeSectionManager.m"
-            timestampString = "578130034.332563"
+            timestampString = "583046440.743082"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
@@ -90,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KKToydayNews/Class/SectionManager/KKHomeSectionManager.m"
-            timestampString = "578130034.332657"
+            timestampString = "583046440.7434731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "161"
@@ -154,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KKToydayNews/Class/SectionManager/KKHomeSectionManager.m"
-            timestampString = "578130034.3329999"
+            timestampString = "583046440.743775"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
@@ -170,7 +154,7 @@
                   moduleName = "KKToydayNews"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chenzhaoshen/JJLearning/KKToydayNews-master/KKToydayNews/Class/SectionManager/KKHomeSectionManager.m"
-                  timestampString = "578133039.5417399"
+                  timestampString = "583053342.2391371"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "63"
@@ -185,7 +169,7 @@
                   moduleName = "KKToydayNews"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chenzhaoshen/JJLearning/KKToydayNews-master/KKToydayNews/Class/SectionManager/KKHomeSectionManager.m"
-                  timestampString = "578133039.546244"
+                  timestampString = "583053342.2426389"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "64"
@@ -201,28 +185,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KKToydayNews/Class/Home/Controller/KKHomeViewCtrl.m"
-            timestampString = "578130034.333089"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "-setupUI"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "KKToydayNews/Class/SectionManager/KKHomeSectionManager.m"
-            timestampString = "578130054.850966"
+            timestampString = "583046440.744076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "-fetchFavSectionWithComplete:"
             landmarkType = "7">
          </BreakpointContent>
@@ -234,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KKToydayNews/Class/SectionManager/KKHomeSectionManager.m"
-            timestampString = "578130103.5989439"
+            timestampString = "583046440.744308"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-fetchFavSectionWithComplete:"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KKToydayNews/Class/Home/Controller/KKHomeViewCtrl.m"
-            timestampString = "578130304.963425"
+            timestampString = "583047219.621629"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "-refreshData"
             landmarkType = "7">
             <Locations>
@@ -266,11 +234,11 @@
                   moduleName = "KKToydayNews"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chenzhaoshen/JJLearning/KKToydayNews-master/KKToydayNews/Class/Home/Controller/KKHomeViewCtrl.m"
-                  timestampString = "578133039.586314"
+                  timestampString = "583053342.264424"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "155"
-                  endingLineNumber = "155"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
                   offsetFromSymbolStart = "57">
                </Location>
                <Location
@@ -281,11 +249,11 @@
                   moduleName = "KKToydayNews"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chenzhaoshen/JJLearning/KKToydayNews-master/KKToydayNews/Class/Home/Controller/KKHomeViewCtrl.m"
-                  timestampString = "578133039.59009"
+                  timestampString = "583053342.2679909"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "156"
-                  endingLineNumber = "156"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
                   offsetFromSymbolStart = "71">
                </Location>
             </Locations>
@@ -320,6 +288,118 @@
             startingLineNumber = "61"
             endingLineNumber = "61"
             landmarkName = "-editBtnClick"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KKToydayNews/Class/Utils/12.KKFetchNewsTool/KKFetchNewsTool.m"
+            timestampString = "583047219.621737"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "-fetchFavoriteSectionWithCatagorys:modify:success:failure:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__76-[KKFetchNewsTool fetchFavoriteSectionWithCatagorys:modify:success:failure:]_block_invoke"
+                  moduleName = "KKToydayNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chenzhaoshen/JJLearning/KKToydayNews-master/KKToydayNews/Class/Utils/12.KKFetchNewsTool/KKFetchNewsTool.m"
+                  timestampString = "583053342.2887239"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1193">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__76-[KKFetchNewsTool fetchFavoriteSectionWithCatagorys:modify:success:failure:]_block_invoke_2"
+                  moduleName = "KKToydayNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chenzhaoshen/JJLearning/KKToydayNews-master/KKToydayNews/Class/Utils/12.KKFetchNewsTool/KKFetchNewsTool.m"
+                  timestampString = "583053342.291798"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "79">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KKToydayNews/Class/SectionManager/KKHomeSectionManager.m"
+            timestampString = "583047259.308906"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-fetchFavSectionWithComplete:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KKToydayNews/Class/Utils/12.KKFetchNewsTool/KKFetchNewsTool.m"
+            timestampString = "583047322.973645"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "-fetchFavoriteSectionWithCatagorys:modify:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KKToydayNews/Class/Home/Controller/KKHomeViewCtrl.m"
+            timestampString = "583047529.547955"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "-setupUI"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KKToydayNews/Class/Home/Controller/KKHomeViewCtrl.m"
+            timestampString = "583047537.435456"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "-setupUI"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

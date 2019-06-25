@@ -1699,7 +1699,7 @@
 				51D9419D205AC480002F9004 /* 3.KKAVPlayer */,
 				51D94186205AC480002F9004 /* 4.KKCommonDevice */,
 				51D941B9205AC481002F9004 /* 5.KKContactManager */,
-				51D94180205AC480002F9004 /* 5.KKFetchNewsTool */,
+				51D94180205AC480002F9004 /* 12.KKFetchNewsTool */,
 				51D941A0205AC480002F9004 /* 6.KKIAPPayTool */,
 				51D941BE205AC481002F9004 /* 7.KKLocaltion */,
 				51D9418E205AC480002F9004 /* 8.KKMediaManager */,
@@ -1814,13 +1814,13 @@
 			path = 1.KKApplePayTool;
 			sourceTree = "<group>";
 		};
-		51D94180205AC480002F9004 /* 5.KKFetchNewsTool */ = {
+		51D94180205AC480002F9004 /* 12.KKFetchNewsTool */ = {
 			isa = PBXGroup;
 			children = (
 				51D94181205AC480002F9004 /* KKFetchNewsTool.h */,
 				51D94182205AC480002F9004 /* KKFetchNewsTool.m */,
 			);
-			path = 5.KKFetchNewsTool;
+			path = 12.KKFetchNewsTool;
 			sourceTree = "<group>";
 		};
 		51D94183205AC480002F9004 /* 10.KKNewsAnalyzeTool */ = {
